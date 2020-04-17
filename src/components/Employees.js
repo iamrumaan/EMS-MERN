@@ -38,8 +38,8 @@ export class Employees extends React.Component {
         .then((response) => {
             console.log('Data:', response);
         })
-        .catch(() => {
-            console.log('Error fetching employee');
+        .catch((res) => {
+            console.log('Error fetching employee',res);
         })
     }
 
